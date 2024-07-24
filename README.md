@@ -1,10 +1,10 @@
 # 💬 Victor Afonso
 
-👋 Olá! Sou [Seu Nome]
+👋 Olá! Sou [Victor Afonso]
 
 Seja bem-vindo ao meu perfil do GitHub
 
-- 🌟 **Interesses:** IA, Machine Learning, Desenvolvimento Web, Automação
+- 🌟 **Interesses:** IA, segurança, Desenvolvimento front-end e backend, banco de dados
 - 📚 **Aprendizado Contínuo:** Sempre buscando aprender e crescer na área de tecnologia
 - 🤖 **Projetos em Destaque:** Confira meus repositórios mais populares e contribuições
 
