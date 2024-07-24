@@ -10,7 +10,7 @@ Seja bem-vindo ao meu perfil do GitHub
 
 ## 📫 Contato
 
-- **LinkedIn:** [Seu LinkedIn]([https://www.linkedin.com/in/seu-p](https://www.linkedin.com/in/victor-afonso-fernandes-313bb4288/)
+- **LinkedIn:** ([https://www.linkedin.com/in/seu-p](https://www.linkedin.com/in/victor-afonso-fernandes-313bb4288/)
 - **Email:** victorafernandes28@gmail.com
 
 ## 🛠️ Ferramentas e Tecnologias
