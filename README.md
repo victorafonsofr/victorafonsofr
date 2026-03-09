@@ -1,5 +1,5 @@
 
-👋 Olá! Sou [Victor Afonso]
+👋 Olá! Me chamo [Victor Afonso]
 
 Seja bem-vindo ao meu perfil do GitHub
 
