@@ -8,10 +8,13 @@
 
 ### 🌟 Interesses
 
+- 🧠 Inteligência artificial
 - 🔐 Cibersegurança
 - 💻 Desenvolvimento back-end
+- 🔧 DevOps
 - 🗄️ Banco de dados
 - 🌐 Redes de computadores
+- 🖥️​ Infraestrutura
 
 ---
 
