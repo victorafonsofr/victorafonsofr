@@ -1,4 +1,4 @@
-<h1 align="center">👋 Bem vindo(a)!</h1>
+<h1 align="center">👋 Bem vindo(a) ao meu perfil!</h1>
 <hr width="80%">
 ---
 
