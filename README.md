@@ -10,7 +10,7 @@
 - 💻 Desenvolvimento back-end
 - 🔧 DevOps
 - 🗄️ Banco de dados
-- 
+  
 ---
 
 ### 🤖 Projetos em Destaque
