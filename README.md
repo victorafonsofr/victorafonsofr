@@ -1,4 +1,4 @@
-<h1 align="center">👋 Olá! Me chamo Victor Afonso</h1>
+<h1 align="center">👋 Bem vindo(a)!</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E86C1&center=true&vCenter=true&width=600&lines=Seja+bem-vindo+ao+meu+perfil+do+GitHub!;Cibersegurança+%7C+Back-end+%7C+Banco+de+Dados+%7C+Redes" alt="Typing SVG" />
@@ -7,15 +7,14 @@
 ---
 
 ### 🌟 Interesses
-
+- 🌐 Redes de computadores
+- 🖥️​ Infraestrutura
 - 🧠 Inteligência artificial
 - 🔐 Cibersegurança
 - 💻 Desenvolvimento back-end
 - 🔧 DevOps
 - 🗄️ Banco de dados
-- 🌐 Redes de computadores
-- 🖥️​ Infraestrutura
-
+- 
 ---
 
 ### 🤖 Projetos em Destaque
@@ -23,8 +22,8 @@
 Confira meus repositórios mais populares e contribuições fixados abaixo 👇
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=victorafonsofr&repo=WAGH&theme=tokyonight&hide_border=true" />
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=victorafonsofr&repo=WHGV-AgenciaDeTurismo&theme=tokyonight&hide_border=true" />
+  <a href="https://github.com/victorafonsofr/Landing-Page-NuSec">Landing page do núcleo de segurança da UFU</a>
+  <a href="https://github.com/victorafonsofr/SysHospital">Projeto de gestão hospitalar escrito em C</a>
 </p>
 
 ---
@@ -44,7 +43,6 @@ Confira meus repositórios mais populares e contribuições fixados abaixo 👇
 ### 📊 Estatísticas do GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=victorafonsofr&show_icons=true&theme=tokyonight&hide_border=true" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=victorafonsofr&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
