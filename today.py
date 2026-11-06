@@ -27,16 +27,51 @@ QUERY_COUNT = {}
 
 # --------------------------------------------------------------------------- API
 def graphql(name, query, variables):
-    QUERY_COUNT[name] = QUERY_COUNT.get(name, 0) + 1
-    r = requests.post('https://api.github.com/graphql',
-                      json={'query': query, 'variables': variables},
-                      headers=HEADERS, timeout=60)
-    if r.status_code != 200:
-        raise RuntimeError(f'{name} falhou: {r.status_code} {r.text}')
-    body = r.json()
-    if 'errors' in body:
-        raise RuntimeError(f'{name} retornou erros: {body["errors"]}')
-    return body['data']
+    url = 'https://api.github.com/graphql'
+
+    for tentativa in range(1, 4):
+        try:
+            r = requests.post(
+                url,
+                json={'query': query, 'variables': variables},
+                headers=HEADERS,
+                timeout=60
+            )
+
+            if r.status_code != 200:
+                raise RuntimeError(
+                    f'Erro HTTP {r.status_code}: {r.text}'
+                )
+
+            data = r.json()
+
+            if 'errors' in data:
+                raise RuntimeError(
+                    f'Erro GraphQL: {data["errors"]}'
+                )
+
+            return data['data']
+
+        except requests.exceptions.ConnectionError:
+            if tentativa == 3:
+                raise
+
+            print(
+                f'Conexão interrompida. '
+                f'Tentativa {tentativa}/3. '
+                f'Tentando novamente...'
+            )
+            time.sleep(2 * tentativa)
+
+        except requests.exceptions.Timeout:
+            if tentativa == 3:
+                raise
+
+            print(
+                f'Tempo limite excedido. '
+                f'Tentativa {tentativa}/3.'
+            )
+            time.sleep(2 * tentativa)
 
 
 def user_id(login):
@@ -59,22 +94,37 @@ def repo_stats(affiliations):
       user(login: $login) {
         repositories(first: 100, after: $cursor, ownerAffiliations: $aff) {
           totalCount
-          nodes { stargazers { totalCount } }
-          pageInfo { endCursor hasNextPage }
+          nodes {
+            stargazerCount
+          }
+          pageInfo {
+            endCursor
+            hasNextPage
+          }
         }
       }
     }'''
+
     cursor, stars, total = None, 0, 0
+
     while True:
-        repos = graphql('repo_stats', query,
-                        {'aff': affiliations, 'login': USER_NAME, 'cursor': cursor})['user']['repositories']
+        repos = graphql(
+            'repo_stats',
+            query,
+            {'aff': affiliations, 'login': USER_NAME, 'cursor': cursor}
+        )['user']['repositories']
+
         total = repos['totalCount']
-        stars += sum(n['stargazers']['totalCount'] for n in repos['nodes'])
+
+        stars += sum(
+            n['stargazerCount']
+            for n in repos['nodes']
+        )
+
         if not repos['pageInfo']['hasNextPage']:
             return total, stars
+
         cursor = repos['pageInfo']['endCursor']
-
-
 def list_repos(affiliations):
     """Lista nameWithOwner + total de commits da branch padrão de cada repositório."""
     query = '''
