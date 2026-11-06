@@ -1,134 +1,56 @@
-<div align="center">
+<h1 align="center">👋 Bem vindo(a) ao meu perfil!</h1>
+<hr width="80%">
+---
 
-<table>
-<tr>
-<td valign="top">
-<pre>
-                                  ++++#*#**++++                                 
-                              *%###*#######****+++                              
-                          +##%%###%%%#####%#%##**+++++                          
-                        *#######%%%%%##%%%%%@%%%##****+                         
-                       *###%%%##%%%%%%%#%%%%%#@@%%%##%#*+                       
-                     +*#%%%%%%%%#%%%#%%%#%%%@@@%%%@%%%%%#*+*                    
-                    **##%%%%%%%%%%%%%%%%%#%%%@@@%@%%%%%@%***+                   
-                   +%%%%%%%%%%%%%%%%%@@@@@%%%%%%%%%%%########                   
-                   %%%%%%%%%%%%%%%%%@@@@%%%##%%####%#%##%%#**+                  
-                   *@@%%%%%@@%%%%%%%%%#%%#####+++*##%%%%%%%#*+                  
-                   *@@@%%%%%%%%%%########*****+=+++#%%%%%%%##*#                 
-                   *%@@@@%%%%%#*#*+**+=+++========+%%%@@@@%##**                 
-                   #@@%%#***##**++=+++=----==--===+*#*#%#%%%###                 
-                   *%@%*++++==+++*+++=-----==+**##*++=====#%##                  
-                    %@%+=#%%%%%%#*+==--------=++****###+--%%#*                  
-                    +%%+*#+====+++++===----======-----=*=-%%*                   
-                     +#=+++**####***++=-:-==+++++*+++=-===##                    
-                      +===**+=#@#==+==-::::-++=###--=+-:::#                     
-                    ====--========---=-::::::--=---:::::::=-                    
-                    ++==-----::::::----:::::...:::::...:::-=-                   
-                    =+=---::::::::-----::::::...........::---                   
-                    =+=----:::::::-=--:::.:::::::......:::=:                    
-                    -*+=---::::---=====-----::-:::..:::::-+:                    
-                    =**=------:---+***+++++++-::-::::::::=-:                    
-                    -*#*==-------==+##*++***=--:::::::::=*-=                    
-                    +##**=----=+*****#*+=+#*+++=--:::::-+***                    
-                     *%%**==-+####***++==++++*##+*=::-=+##*                     
-                      %%%#*+=++++====----------=+++--=+###                      
-                       %%%#*+++=--====++++=-------===**%#*                      
-                       **%%#**========+***+=------=++#%%+                       
-                       ++*%%#*====----------::---==*#%#                         
-                       +==+#%#*++====-----------=+##*                           
-                    :=+====+#%%%**+++++++++++++*#%#==                           
-             *### *=-===--===+*%%%%%%%%%@%%###%%%+---                           
-     +#%#%%%%%%*-----==-----==++*#%%%%%@@%@%%%#*=----                           
-#%%%%%%%%%%%%%%%=---:=--------===+++++++++++===-----=                           
-%%%%%%%%%%%%%%%%%*=-:-----------=============-------*%%%%#+                     
-%%%%%%%%%%%%%%%%%%%%:-------------==========-------=-#%%@%%%%##                 
-%%%%%%%%%%%%%%%%%%%%=%%#----------=========--------#+%%%%@%%@@@%#**             
-%%%%%%%%%%%%%%%%%%%%-%%%%%%%%%*::-----------::=##%%%*+%%%@@%%@@@@%###****+++    
-%%%%%%%%%%%%%%%%%%%%=#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%+=%%%%@%#%@@@@%##%%%####%%#*
-%%%%%%%%%%%%%%%%%%%%=#%%%%%%%%%%%%%%%%%%#%%%%%%%%%%%#:%%%%%%%#%%@@@%##%%###%#%%#
-%%%%%%%%%%%%%%%%%%%%=#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#.%%%%%%%%%%%%%@%########%%#
-%%%%%%%%%%#%%%%%%%%%=#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#.%%%%%%%#%%%%%%@%#######%%%
-%%%%%%%#%%%%%%%%%%%%-#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#.%%%%%%%%#%%%%%%@%##%#%%%%%
-##%%%%%#######%%%%%#-#%%%%%%%%%%%%%%%#%%%%%%%%%%%%%##.##%%%%%%%%%%%%%%@##%%%%##%
-#%%%#%########%##%%#-##%%%%%%%%%%%##%%%%%%%%%%%%%#%%#.##%%%%%%%#%%%%%%%%#%%%%#%%
-%##############%%##*-##%%%#%%%####%%%%%%%%%%%%%%##%##.#%%#%#%%%##%%%#%%%%#%%%#%%
-####################-##%#%%#%%###%%%%%%%%%%#%%%%#####.#%%###%%%##%%###%%%%%%%#%%
-#########%######%###-#%#%%#%###%%%%%%%%%%%%%%%%%####*.#%###%#%%########%%%#%%%%#
-#############*+*+##+=##%%%%%###%%##%%%%###%%%%%%####+=##%#####%#########%%%#%%#%
-#########+++**#*#*#.*##%#%####%%%%%%%%#%%%%%%#######-+##################%%%#%%%%
-##%######*++=++++** ########%###%%%%%#%##%%%%%####%#-+########%%#########%%#%%%%
-##########*+*##+++*.############%%%##%%#%%%%########:#########%#########%%%%%%%%
-############*#%*+## ###########%%###%%#%%%#%####%###:####################%%%#%%%
-############%#####* ###########%###%%%#%###########*:####################%%%#%%@
-##################+.########%####%%%#%%%#%###%######:####################%%%##%%
-##%###############*.############%%%#%%#%%%%#%#%%####:####################%%%##%%
-##################* ##########%%%%####%%#%%%%#######:####################%%%##%%
-##################+ ##########%#%#%###%#%%%%%#######-*####################%%##%@
-##################*.########%%%%########%%%%%%######:#####################%###%%
-</pre>
-</td>
-<td valign="middle">
-<pre>
-victor@github ─────────────────────────────────────
- OS: ............................ Linux / Windows
- Uptime: ........................ &lt;XX&gt; anos
- Host: .......................... &lt;Sua Universidade&gt;
- Kernel: ........................ Estudante de &lt;Curso&gt;
- IDE: ........................... VS Code, NetBeans
+### 🌟 Interesses
+- 🌐 Redes de computadores
+- 🖥️​ Infraestrutura
+- 🧠 Inteligência artificial
+- 🔐 Cibersegurança
+- 💻 Desenvolvimento back-end
+- 🔧 DevOps
+- 🗄️ Banco de dados
+  
+---
 
- Languages.Programming: ......... C, Java, Python, C#
- Languages.Data: ................ R, SQL (MySQL)
- Languages.Computer: ............ HTML, CSS, JSON, Markdown
- Languages.Real: ................ Português, Inglês
+### 🤖 Projetos em Destaque
 
- Hobbies.Software: .............. Estruturas de dados, Web
- Hobbies.Research: .............. Segurança, Agentes de IA
+Confira meus repositórios mais populares e contribuições fixados abaixo 👇
 
- ─ Contact ─────────────────────────────────────────
- Email: ......................... &lt;seu-email&gt;
- LinkedIn: ...................... &lt;seu-linkedin&gt;
- Discord: ....................... &lt;seu-discord&gt;
-
- ─ GitHub Stats ────────────────────────────────────
- Repos: ......................... &lt;N&gt;
- Stars: ......................... &lt;N&gt;
- Commits: ....................... &lt;N&gt;
- Followers: ..................... &lt;N&gt;
-</pre>
-</td>
-</tr>
-</table>
-
-</div>
+<p align="center">
+  <a href="https://github.com/victorafonsofr/Landing-Page-NuSec">Landing page do núcleo de segurança da UFU</a> <br>
+  <a href="https://github.com/victorafonsofr/SysHospital">Projeto de gestão hospitalar escrito em C</a>
+</p>
 
 ---
 
-## 🛠️ Stack
+### 🛠️ Ferramentas e Tecnologias
 
-<div align="center">
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/C-blue?style=for-the-badge" />
+</p>
 
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+---
 
-</div>
+### 📊 Estatísticas do GitHub
 
-## 📊 Estatísticas
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=victorafonsofr&theme=tokyonight&hide_border=true" />
+</p>
 
-<div align="center">
+---
 
-![Stats](https://github-readme-stats.vercel.app/api?username=<seu-usuario>&show_icons=true&theme=github_dark&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=<seu-usuario>&layout=compact&theme=github_dark&hide_border=true)
+### 📫 Contato
 
-</div>
-
-## 📌 Projetos em destaque
-
-- **<Projeto 1>**: descrição curta
-- **<Projeto 2>**: descrição curta
-- **<Projeto 3>**: descrição curta
+<p align="center">
+  <a href="https://www.linkedin.com/in/victorafonsofr/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:victorafernandes28@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
