@@ -6,7 +6,6 @@ Baseado na ideia do repositório Andrew6rant/Andrew6rant (reescrito e adaptado).
 Variáveis de ambiente:
   ACCESS_TOKEN  token (fine-grained) com acesso de leitura aos repositórios
   USER_NAME     usuário do GitHub (ex.: victorafonsofr)
-  BIRTHDAY      (opcional) data de nascimento AAAA-MM-DD, usada no "Uptime"
 """
 import datetime
 import hashlib
@@ -19,7 +18,6 @@ from lxml import etree
 
 HEADERS = {'Authorization': 'Bearer ' + os.environ['ACCESS_TOKEN']}
 USER_NAME = os.environ['USER_NAME']
-BIRTHDAY = os.environ.get('BIRTHDAY', '').strip()
 AFFILIATIONS = ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER']
 CACHE_DIR = 'cache'
 COMMENT_SIZE = 7  # linhas de comentário no topo do arquivo de cache
@@ -190,14 +188,6 @@ def plural(n, singular, plural_):
     return singular if n == 1 else plural_
 
 
-def uptime(birthday):
-    d = relativedelta.relativedelta(datetime.datetime.today(), birthday)
-    text = (f'{d.years} {plural(d.years, "ano", "anos")}, '
-            f'{d.months} {plural(d.months, "mês", "meses")}, '
-            f'{d.days} {plural(d.days, "dia", "dias")}')
-    return text + (' 🎂' if d.months == 0 and d.days == 0 else '')
-
-
 def set_value(root, element_id, value):
     """Troca o texto do elemento e realinha os pontinhos (<id>_dots) usando data-len."""
     text = fmt(value) if isinstance(value, int) else str(value)
@@ -242,8 +232,6 @@ if __name__ == '__main__':
         'loc_add': fmt(add),
         'loc_del': fmt(dele),
     }
-    if BIRTHDAY:
-        values['age_data'] = uptime(datetime.datetime.strptime(BIRTHDAY, '%Y-%m-%d'))
 
     for svg in SVG_FILES:
         svg_overwrite(svg, values)

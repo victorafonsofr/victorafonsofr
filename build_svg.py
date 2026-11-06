@@ -10,9 +10,9 @@ com a largura da "célula" — o today.py lê esse valor para realinhar os núme
 from xml.sax.saxutils import escape
 
 W = 60            # largura (em caracteres) da coluna de texto
-WIDTH = 985
-X_ART, Y_ART, ART_PITCH, ART_FONT = 15, 26, 13, 11
-X_TXT, Y_TXT, PITCH, TXT_FONT = 405, 30, 20, 15
+WIDTH = 1100
+X_ART, Y_ART, ART_PITCH, ART_FONT = 15, 30, 15, 13
+X_TXT, Y_TXT, PITCH, TXT_FONT = 478, 34, 22, 16
 
 THEMES = {
     'dark_mode.svg': dict(bg='#161b22', text='#c9d1d9', key='#ffa657', value='#a5d6ff',
@@ -70,33 +70,34 @@ def section(title):
 def build_lines(initial):
     rows = []  # lista de Line (ou None para linha em branco)
     rows.append(Line(0).add('victor@afonso', 'key').add(' ' + '-' * (W - 14)))
-    rows.append(Line(0).kv('Host', 'Universidade Federal de Uberlândia (UFU)'))
+    rows.append(Line(0).kv('OS', 'Debian 13, Windows 11'))
     rows.append(Line(0).dyn('Uptime', initial['age'], 'age_data', W - 6 - 3))
-    rows.append(Line(0).kv('IDE', 'NetBeans'))
+    rows.append(Line(0).kv('IDE', 'NetBeans 31', 'vscode 1.145'))
+    rows.append(Line(0).kv('Kernel', 'role:Student'))
     rows.append(None)
-    rows.append(Line(0).kv('Linguagens.Dev', 'C, Java, Python, C#, JavaScript, R, SQL'))
-    rows.append(Line(0).kv('Linguagens.Web', 'HTML, CSS, JavaScript'))
-    rows.append(Line(0).kv('Linguagens.Humanas', 'Português'))
+    rows.append(Line(0).kv('Languages.dev', 'C, Java, Python, JavaScript, SQL'))
+    rows.append(Line(0).kv('Languages.web', 'HTML, CSS, JavaScript'))
+    rows.append(Line(0).kv('Languages.human', 'English','Portuguese', 'French (currently learning)'))
     rows.append(None)
-    rows.append(Line(0).kv('Interesses.Infra', 'Redes, Infraestrutura, DevOps'))
-    rows.append(Line(0).kv('Interesses.Dev', 'Back-end, Banco de dados, IA, Cibersegurança'))
+    rows.append(Line(0).kv('Interests.infra', 'Network security, infrastructure, DevOps'))
+    rows.append(Line(0).kv('Interests.dev', 'back-end, databases, AI, cybersecurity'))
     rows.append(None)
-    rows.append(section('Contato'))
-    rows.append(Line(0).kv('Email', 'victorafernandes28@gmail.com'))
-    rows.append(Line(0).kv('LinkedIn', 'victorafonsofr'))
+    rows.append(section('.contact'))
+    rows.append(Line(0).kv('email', 'victorafernandes28@gmail.com'))
+    rows.append(Line(0).kv('linkedIn', 'victorafonsofr'))
     rows.append(None)
-    rows.append(section('Estatísticas do GitHub'))
+    rows.append(section('github.stats'))
 
     l = Line(0).dyn('Repos', initial['repo'], 'repo_data', 6)
-    l.add(' {').add('Contribuídos', 'key').add(': ').add(initial['contrib'], 'value', 'contrib_data')
+    l.add(' {').add('Contributed', 'key').add(': ').add(initial['contrib'], 'value', 'contrib_data')
     l.add('} | ').dyn('Stars', initial['star'], 'star_data', 16)
     rows.append(l)
 
     l = Line(0).dyn('Commits', initial['commit'], 'commit_data', 23)
-    l.add(' | ').dyn('Seguidores', initial['follower'], 'follower_data', 11)
+    l.add(' | ').dyn('Followers', initial['follower'], 'follower_data', 11)
     rows.append(l)
 
-    l = Line(0).dyn('Linhas de código', initial['loc'], 'loc_data', 9)
+    l = Line(0).dyn('Lines of code in here', initial['loc'], 'loc_data', 9)
     l.add(' ( ').add(initial['add'], 'addColor', 'loc_add').add('++', 'addColor')
     l.add(', ').add(initial['del'], 'delColor', 'loc_del').add('--', 'delColor').add(' )')
     rows.append(l)
@@ -141,7 +142,7 @@ if __name__ == '__main__':
     with open('ascii_art.txt', encoding='utf-8') as f:
         art = [line.rstrip() for line in f.read().splitlines()]
     # valores iniciais (o today.py substitui tudo na primeira execução da Action)
-    initial = dict(age='0 anos, 0 meses, 0 dias', repo='23', contrib='23', star='1',
+    initial = dict(age='X years, X months, X days', repo='23', contrib='23', star='1',
                    commit='0', follower='9', loc='0', add='0', **{'del': '0'})
     lines = build_lines(initial)
     for name, theme in THEMES.items():
