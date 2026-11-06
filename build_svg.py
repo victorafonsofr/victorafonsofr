@@ -77,7 +77,7 @@ def build_lines(initial):
     rows.append(None)
     rows.append(Line(0).kv('Languages.dev', 'C, Java, Python, JavaScript, SQL'))
     rows.append(Line(0).kv('Languages.web', 'HTML, CSS, JavaScript'))
-    rows.append(Line(0).kv('Languages.human', 'English','Portuguese', 'French (currently learning)'))
+    rows.append(Line(0).kv('Languages.human', 'English, Portuguese, French (currently learning)'))   
     rows.append(None)
     rows.append(Line(0).kv('Interests.infra', 'Network security, infrastructure, DevOps'))
     rows.append(Line(0).kv('Interests.dev', 'back-end, databases, AI, cybersecurity'))
